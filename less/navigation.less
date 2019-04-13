@@ -1,9 +1,28 @@
 // Navigation code here
 .head-section {
     .flex-align(@dir: column);
-    align-content: center;
+    align-items: center;
+    background-color: @nav-bg;
 }
 
 .head {
     .flex-align(@dir: column);
+    margin-top: 1.5em;
+    width: 30%;
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+.navigation {
+    padding: 1.5em 0 0.75em 0;
+    .flex-align(@justify: space-between);
+
+    a {
+        font-size: 1.6rem;
+
+
+    }
 }
