@@ -64,7 +64,14 @@
       .btn {
         .btn-design(@width: 25%, @height: 12%);
         border-radius: 8px;
+
+        &:hover {
+          color: @btn-bg-color;
+          background-color: @nav-bg;
+        }
       }
+
+
     }
 
     .walk-img {
