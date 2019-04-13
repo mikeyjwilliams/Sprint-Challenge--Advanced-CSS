@@ -2,6 +2,10 @@
 
 .home {
 
+  @media @phone {
+    width: 90%;
+  }
+
   .banner {
     img {
       .img-shape(@width: 100%, @height: auto, @border-rad: 10px);
@@ -29,6 +33,21 @@
       .img-shape(@width: 28%, @height: 100%, @border-rad: 20px);
       margin: 20px 2.5%;
     }
+
+    @media @phone {
+      .blast {
+        .img-shape(@width: 100%, @height: auto, @border-rad: 20px);
+      }
+
+      .sky {
+        display: none;
+      }
+
+      .launch {
+        display: none;
+      }
+    }
+
   }
 
   .visit-planets {
