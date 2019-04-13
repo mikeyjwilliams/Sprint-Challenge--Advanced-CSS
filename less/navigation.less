@@ -4,6 +4,11 @@
     align-items: center;
     background-color: @nav-bg;
     border-bottom: 2px solid @nav-border;
+
+    @media @phone {
+        max-width: @mobile-max;
+        background-color: @nav-bg;
+    }
 }
 
 .head {
@@ -11,15 +16,27 @@
     margin-top: 1.5em;
     width: 30%;
 
+    @media @phone {
+        max-width: @mobile-max;
+        .flex-align(@dir: column);
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
     h1 {
         font-size: 4rem;
-        text-align: center;
+        text-align: @header;
     }
 }
 
 .navigation {
     padding: 1.5em 0 0.75em 0;
     .flex-align(@justify: space-between);
+
+    @media @phone {
+        padding: 1em 0 0 0;
+
+    }
 
     a {
         font-size: 1.6rem;
